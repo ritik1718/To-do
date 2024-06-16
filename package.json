@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ritik1718.github.io/reactvite",
+  "homepage": "https://ritik1718.github.io/To-do",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
