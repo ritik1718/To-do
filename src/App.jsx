@@ -3,17 +3,12 @@ import Navbar from "./components/Navbar";
 import {v4 as uuidv4} from 'uuid'
 
 function App() {
-  const [todo, setTodo] = useState("")
+  const [todo, setTodo] = useState('')
   const [todos, setTodos] = useState([])
-  useEffect(() => {
-    
-  }, )
   
    const handleAdd=  ()=>{
     setTodos([...todos, {id: uuidv4(), todo, isCompleted: false}])
-    setTodo("") 
-  
-    console.log(todo)
+    setTodo('')
   }
    const handleCheckbox = (e)=>{
    let id =e.target.name;
@@ -45,7 +40,7 @@ function App() {
         <h1 className="text-xl font-bold my-3">Add Todo</h1>
         <input
           className="p-4 rounded-lg w-3/4"
-          type="text"
+          type="text" value={todo}
           onChange={handleChange}
         />
         <button
